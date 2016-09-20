@@ -1,0 +1,85 @@
+@font-face {
+  font-family: 'Poiret One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Poiret One'), local('PoiretOne-Regular'), url(../font/Poiret One.woff) format('woff');
+}
+@font-face {
+  font-family: 'Righteous';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Righteous'), local('Righteous-Regular'), url(../font/Righteous.woff) format('woff');
+}
+
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	text-align: center;
+	height: 100vh;
+}
+ul{
+	display: none;
+}
+/*背景视频*/
+.video-banner,.video-container,.filter{
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.video-container{
+	background: black;
+	overflow: hidden; 
+}
+.filter{
+	z-index: 50;
+	background-color: rgba(0,0,0,0.4);
+	/*background-color: black;*/
+}
+.video-banner{
+	z-index: 30;
+}
+/*大标题*/
+#title-container{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 100;
+	text-align: center;
+	vertical-align: middle;
+}
+#title{
+	font-family: Poiret One,serif;
+	color: white;
+	font-size: 9rem;
+	line-height: 9.1rem;
+
+	position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin: auto;
+    display: table;
+    text-align: center;
+}
+#welcome{
+	display: inline-block;
+	font-family: Poiret One,sans-serif;
+	color: white;
+	font-size: 3rem;
+	line-height: 3.1rem;
+}
+#welcome a{
+	transition: color 0.8s;
+	/*-webkit-transition: color 1s;*/
+	text-decoration: none;
+	/*color: blue;*/
+}
+#welcome a:hover{
+	color: red;
+}
